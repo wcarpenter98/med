@@ -1,12 +1,7 @@
 import React, { useState, useEffect, Component } from 'react';
 import './App.css';
-import { API } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import { listNotes } from './graphql/queries';
-import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
 import Home from './components/Main_menu';
 import Consumption_history from './components/Consumption_history'
 import Pill_information from './components/Pill_information'
