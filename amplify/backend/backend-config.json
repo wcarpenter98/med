@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "meda83c81b0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
