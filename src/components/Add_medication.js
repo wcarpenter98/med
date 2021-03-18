@@ -23,7 +23,13 @@ class addMedication extends Component {
             medicationName: this.state.medicationName,
             quantity: this.state.quantity,
             refillFrequency: this.state.refillFrequency
-		}
+        }
+        //createAddMedicationApp is from the mutations.js file
+        await API.graphql(graphqlOperation(createAddMedicationApp, { input }));
+
+        //makes sure it clears the form fields, this is required because the value is attached
+        // to the state itself.
+        this.setState({ medicationName: "", quantity: "", refillFrequency: "" })
     }
 
     //retrieve information from the form and change the state 
@@ -32,12 +38,7 @@ class addMedication extends Component {
     });
 
 
-    //createAddMedicationApp is from the mutations.js file
-    await API.graphql(graphqlOperation(createAddMedicationApp, { input }));
 
-    //makes sure it clears the form fields, this is required because the value is attached
-    // to the state itself.
-    this.setState({ medicationName: "", quantity: "", refillFrequency: "" })
 
 
 
