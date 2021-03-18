@@ -1,54 +1,45 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateAddMedicationApp = /* GraphQL */ `
-  subscription OnCreateAddMedicationApp(
-    $medicationName: String
-    $quantity: Int
-    $refillFrequency: Int
-  ) {
-    onCreateAddMedicationApp(
-      medicationName: $medicationName
-      quantity: $quantity
-      refillFrequency: $refillFrequency
-    ) {
-      medicationName
-      quantity
-      refillFrequency
+export const onCreateTodo = /* GraphQL */ `
+  subscription OnCreateTodo {
+    onCreateTodo {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;
-export const onUpdateAddMedicationApp = /* GraphQL */ `
-  subscription OnUpdateAddMedicationApp(
-    $medicationName: String
-    $quantity: Int
-    $refillFrequency: Int
-  ) {
-    onUpdateAddMedicationApp(
-      medicationName: $medicationName
-      quantity: $quantity
-      refillFrequency: $refillFrequency
-    ) {
-      medicationName
-      quantity
-      refillFrequency
+export const onUpdateTodo = /* GraphQL */ `
+  subscription OnUpdateTodo {
+    onUpdateTodo {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;
-export const onDeleteAddMedicationApp = /* GraphQL */ `
-  subscription OnDeleteAddMedicationApp(
-    $medicationName: String
-    $quantity: Int
-    $refillFrequency: Int
-  ) {
-    onDeleteAddMedicationApp(
-      medicationName: $medicationName
-      quantity: $quantity
-      refillFrequency: $refillFrequency
-    ) {
-      medicationName
-      quantity
-      refillFrequency
+export const onDeleteTodo = /* GraphQL */ `
+  subscription OnDeleteTodo {
+    onDeleteTodo {
+      id
+      name
+      description
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
     }
   }
 `;

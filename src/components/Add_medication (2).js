@@ -81,17 +81,6 @@ class addMedication extends Component {
 
                     <div class="container-fluid text-center mt-5">
 
-
-                        <form className="add-post" onSubmit={this.handleAddMed}>
-                            <input type="text" placeholder="Medication Name" required value={this.state.medicationName} onChange={this.handleMedFormChange} />
-                            <input type="number" placeholder="Quantity" required value={this.state.quantity} onChange={this.handleMedFormChange} />
-                            <input type="number" placeholder="Refill Frequency (Days)" required value={this.state.refillFrequency} onChange={this.handleMedFormChange} />
-                            <input type="submit" className="btn"/>
-                        </form>
-
-
-
-
                         <form class="justify-content-center" onSubmit={this.handleAddMed} >
                   
                             <div class="row">

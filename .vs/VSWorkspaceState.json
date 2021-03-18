@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\amplify",
+    "\\amplify\\backend",
+    "\\amplify\\backend\\api",
+    "\\amplify\\backend\\api\\med",
+    "\\amplify\\backend\\auth\\meda83c81b0",
+    "\\public",
+    "\\src",
+    "\\src\\components",
+    "\\src\\graphql"
+  ],
+  "SelectedNode": "\\amplify\\backend\\api\\med\\schema.graphql",
+  "PreviewInSolutionExplorer": false
+}
