@@ -15,7 +15,13 @@ class addMedication extends Component {
         //tba
     }
 
-    handleAddMed = async () => {
+
+    //retrieve information from the form and change the state 
+    handleMedFormChange = event => this.setState({
+        [event.target.name]: event.target.value
+    });
+
+    handleAddMed = async event => {
         //event.preventDefault();
 
         const input = {
@@ -31,10 +37,7 @@ class addMedication extends Component {
         this.setState({ medicationName: "", quantity: "", refillFrequency: "" })
     }
 
-    //retrieve information from the form and change the state 
-    handleMedFormChange = event => this.setState({
-        [event.target.name]: event.target.value
-    });
+ 
 
 
 
