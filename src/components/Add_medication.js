@@ -9,7 +9,6 @@ class addMedication extends Component {
         medicationName: "",
         quantity: "",
         refillFrequency: ""
-
     }
 
     componentDidMount = async () => {
@@ -17,7 +16,7 @@ class addMedication extends Component {
     }
 
     handleAddMed = async () => {
-        event.preventDefault();
+        //event.preventDefault();
 
         const input = {
             medicationName: this.state.medicationName,
