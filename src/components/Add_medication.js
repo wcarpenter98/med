@@ -43,7 +43,7 @@ class addMedication extends Component {
 
 
 
-    Add_medication = () => {
+    
         render() {
             return (
                 <div>
@@ -118,5 +118,5 @@ class addMedication extends Component {
 
             );
         }
-    }
-}export default Add_medication;
+    
+}export default addMedication;
