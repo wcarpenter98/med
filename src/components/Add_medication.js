@@ -3,6 +3,9 @@ import { getAddMedicationApp } from '../graphql/queries'
 import { API, graphqlOperation } from 'aws-amplify'
 import { createAddMedicationApp } from '../graphql/mutations'
 
+
+
+
 class addMedication extends Component {
 
     state = {
