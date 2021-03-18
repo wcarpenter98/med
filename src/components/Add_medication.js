@@ -67,7 +67,8 @@ class addMedication extends Component {
 
                     <div class="container-fluid text-center mt-5">
 
-                        <form class="justify-content-center">
+                        <form class="justify-content-center" onSubmit={this.handleAddMed} >
+                  
                             <div class="row">
                                 <div class="col">
                                     <h1 class="display-6">Add Medication</h1>
@@ -91,7 +92,7 @@ class addMedication extends Component {
                             </div>
                             <div class="row justify-content-center my-4">
                                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-7">
-                                    <input type="submit" class="btn btn-light form-control" onSubmit={this.handleAddMed} />
+                                    <input type="submit" class="btn btn-light form-control" />
                                 </div>
                             </div>
                         </form>
