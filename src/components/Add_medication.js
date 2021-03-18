@@ -43,7 +43,7 @@ class addMedication extends Component {
 
 
 
-    const Add_medication = () => {
+    Add_medication = () => {
         render() {
             return (
                 <div>
